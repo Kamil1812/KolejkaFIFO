@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btn_add).setOnClickListener {
             val value = findViewById<TextInputLayout>(R.id.textInputLayout).toString()
             val value_num = value.toInt()
-            val tab : Array<Int> = arrayOf()
+            val tab: Array<Int> = arrayOf()
         }
     }
 }
