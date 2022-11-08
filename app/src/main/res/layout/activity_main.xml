@@ -51,10 +51,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/myEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:hint="Dodaj liczbę:" />
+            android:hint="Dodaj liczbę:"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
