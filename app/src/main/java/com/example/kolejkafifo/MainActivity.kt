@@ -25,19 +25,23 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.btn_first).setOnClickListener {
-            output.text = queue.first().toString()
+            if(!queue.isEmpty())
+                output.text = queue.first().toString()
         }
 
         findViewById<Button>(R.id.btn_last).setOnClickListener{
-            output.text = queue.last().toString()
+            if(!queue.isEmpty())
+                output.text = queue.last().toString()
         }
 
         findViewById<Button>(R.id.btn_size).setOnClickListener {
-            output.text = queue.size.toString()
+            if(!queue.isEmpty())
+                output.text = queue.size.toString()
         }
 
         findViewById<Button>(R.id.btn_pop_back).setOnClickListener {
-            queue.remove()
+            if(!queue.isEmpty())
+                queue.remove()
         }
 
     }
