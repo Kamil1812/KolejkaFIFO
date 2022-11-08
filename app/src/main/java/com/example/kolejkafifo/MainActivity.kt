@@ -21,14 +21,15 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btn_push_back).setOnClickListener {
             queue.add(text.text.toString().toInt())
+            text.text.clear()
         }
 
         findViewById<Button>(R.id.btn_first).setOnClickListener {
-                output.text = queue.first().toString()
+            output.text = queue.first().toString()
         }
 
         findViewById<Button>(R.id.btn_last).setOnClickListener{
-                output.text = queue.last().toString()
+            output.text = queue.last().toString()
         }
 
         findViewById<Button>(R.id.btn_size).setOnClickListener {
