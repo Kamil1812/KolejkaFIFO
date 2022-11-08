@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
             if (findViewById<RadioButton>(R.id.rb_size).isChecked)
             {
-
+                output.text = queue.size.toString()
             }
 
             if (findViewById<RadioButton>(R.id.rb_push_back).isChecked)
