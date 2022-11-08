@@ -16,43 +16,28 @@ class MainActivity : AppCompatActivity() {
         var value = findViewById<TextInputEditText>(R.id.myEditText).text.toString().toIntOrNull()
 
         // KAMIL NIEWIADOMSKI 3pr-T5
-        val i = 0
-
         val queue: Queue<Int> = LinkedList<Int>()
         val text = findViewById<EditText>(R.id.myEditText)
         val output = findViewById<TextView>(R.id.TextView_wynik)
 
-        findViewById<Button>(R.id.btn_add).setOnClickListener {
+        findViewById<Button>(R.id.btn_push_back).setOnClickListener {
             queue.add(text.text.toString().toInt())
         }
 
-        findViewById<Button>(R.id.btn_wykonaj).setOnClickListener {
-
-
-            if (findViewById<RadioButton>(R.id.rb_first).isChecked)
-            {
+        findViewById<Button>(R.id.btn_first).setOnClickListener {
                 output.text = queue.first().toString()
-            }
+        }
 
-            if (findViewById<RadioButton>(R.id.rb_last).isChecked)
-            {
+        findViewById<Button>(R.id.btn_last).setOnClickListener{
                 output.text = queue.last().toString()
-            }
+        }
 
-            if (findViewById<RadioButton>(R.id.rb_size).isChecked)
-            {
-                output.text = queue.size.toString()
-            }
+        findViewById<Button>(R.id.btn_size).setOnClickListener {
+            output.text = queue.size.toString()
+        }
 
-            if (findViewById<RadioButton>(R.id.rb_push_back).isChecked)
-            {
-
-            }
-
-            if (findViewById<RadioButton>(R.id.rb_pop_back).isChecked)
-            {
-
-            }
+        findViewById<Button>(R.id.btn_pop_back).setOnClickListener {
+            queue.remove()
         }
 
     }

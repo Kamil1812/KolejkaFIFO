@@ -6,29 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RadioButton
-        android:id="@+id/rb_last"
-        android:layout_width="72dp"
-        android:layout_height="51dp"
-        android:text="last()"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_add"
-        app:layout_constraintVertical_bias="0.107" />
-
-    <RadioButton
-        android:id="@+id/rb_push_back"
-        android:layout_width="113dp"
-        android:layout_height="52dp"
-        android:text="push_back()"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_add"
-        app:layout_constraintVertical_bias="0.434" />
-
     <TextView
         android:id="@+id/TextView_wynik"
         android:layout_width="wrap_content"
@@ -59,63 +36,65 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn_add"
+        android:id="@+id/btn_push_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DODAJ"
+        android:text="push_back()"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.096" />
-
-    <RadioButton
-        android:id="@+id/rb_pop_back"
-        android:layout_width="109dp"
-        android:layout_height="51dp"
-        android:text="pop_back()"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_add"
-        app:layout_constraintVertical_bias="0.434" />
-
-    <RadioButton
-        android:id="@+id/rb_size"
-        android:layout_width="76dp"
-        android:layout_height="50dp"
-        android:text="size()"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_add"
-        app:layout_constraintVertical_bias="0.107" />
-
-    <RadioButton
-        android:id="@+id/rb_first"
-        android:layout_width="78dp"
-        android:layout_height="48dp"
-        android:text="first()"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.171"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_add"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintVertical_bias="0.103" />
 
     <Button
-        android:id="@+id/btn_wykonaj"
+        android:id="@+id/btn_pop_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WYKONAJ"
+        android:text="pop_back()"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_last"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <Button
+        android:id="@+id/btn_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first()"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.321" />
+
+    <Button
+        android:id="@+id/btn_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="last()"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.318" />
+
+    <Button
+        android:id="@+id/btn_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="size()"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.318" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
