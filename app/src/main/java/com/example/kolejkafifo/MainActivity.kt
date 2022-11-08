@@ -15,33 +15,33 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // KAMIL NIEWIADOMSKI 3pr-T5
-        val queue: Queue<Int> = LinkedList<Int>()
+        val stack = ArrayDeque<Int>()
         val text = findViewById<EditText>(R.id.myEditText)
         val output = findViewById<TextView>(R.id.TextView_wynik)
 
         findViewById<Button>(R.id.btn_push_back).setOnClickListener {
-            queue.add(text.text.toString().toInt())
+            stack.add(text.text.toString().toInt())
             text.text.clear()
         }
 
         findViewById<Button>(R.id.btn_first).setOnClickListener {
-            if(!queue.isEmpty())
-                output.text = queue.first().toString()
+            if(!stack.isEmpty())
+                output.text = stack.last().toString()
         }
 
         findViewById<Button>(R.id.btn_last).setOnClickListener{
-            if(!queue.isEmpty())
-                output.text = queue.last().toString()
+            if(!stack.isEmpty())
+                output.text = stack.first().toString()
         }
 
         findViewById<Button>(R.id.btn_size).setOnClickListener {
-            if(!queue.isEmpty())
-                output.text = queue.size.toString()
+            if(!stack.isEmpty())
+                output.text = stack.size.toString()
         }
 
         findViewById<Button>(R.id.btn_pop_back).setOnClickListener {
-            if(!queue.isEmpty())
-                queue.remove()
+            if(!stack.isEmpty())
+                stack.removeLast()
         }
 
     }
