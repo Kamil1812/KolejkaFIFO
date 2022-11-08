@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var value = findViewById<TextInputEditText>(R.id.myEditText).text.toString().toIntOrNull()
 
         // KAMIL NIEWIADOMSKI 3pr-T5
         val queue: Queue<Int> = LinkedList<Int>()
