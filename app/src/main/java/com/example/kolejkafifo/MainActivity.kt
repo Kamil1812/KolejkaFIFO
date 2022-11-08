@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
             if (findViewById<RadioButton>(R.id.rb_last).isChecked)
             {
-
+                output.text = queue.last().toString()
             }
 
             if (findViewById<RadioButton>(R.id.rb_size).isChecked)
