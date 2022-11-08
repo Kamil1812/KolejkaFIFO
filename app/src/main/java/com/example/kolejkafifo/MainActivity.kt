@@ -13,8 +13,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        // KAMIL NIEWIADOMSKI 3pr-T5
         val stack = ArrayDeque<Int>()
         val text = findViewById<EditText>(R.id.myEditText)
         val output = findViewById<TextView>(R.id.TextView_wynik)
